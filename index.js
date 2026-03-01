@@ -1,25 +1,25 @@
-let nome = "Qual é o seu nome?";
-console.log(nome);
+let nomeDoHeroi = "Allysson";
+let classificacaoDoHeroi = "";
+let xpDoHeroi = 10000;
 
-let xp = "Qual é o seu xp?";
-console.log(xp);
-
-if (xp <= 1000) {
-    console.log("Você está no nível Ferro!");
-}else if (xp >= 1001 && xp <= 2000) {
-    console.log("Você está no nível Bronze!");
-}else if (xp >= 2001 && xp <= 5000) {
-    console.log("Você está no nível Prata!");
-}else if (xp >= 5001 && xp <= 7000) {
-    console.log("Você está no nível Ouro!");
-}else if (xp >= 7001 && xp <= 8000) {
-    console.log("Você está no nível Platina!");
-}else if (xp >= 8001 && xp <= 9000) {
-    console.log("Você está no nível Ascendente!");
-}else if (xp >= 9001 && xp <= 10000) {
-    console.log("Você está no nível Imortal!");
-}else if (xp >= 10001) {
-    console.log("Você está no nível Radiante!");
+if (xpDoHeroi <= 1000) {
+    classificacaoDoHeroi = "Ferro";
+}else if (xpDoHeroi >= 1001 && xpDoHeroi <= 2000) {
+    classificacaoDoHeroi = "Bronze";
+}else if (xpDoHeroi >= 2001 && xpDoHeroi <= 5000) {
+    classificacaoDoHeroi = "Prata";
+}else if (xpDoHeroi >= 5001 && xpDoHeroi <= 7000) {
+    classificacaoDoHeroi = "Ouro";
+}else if (xpDoHeroi >= 7001 && xpDoHeroi <= 8000) {
+    classificacaoDoHeroi = "Platina";
+}else if (xpDoHeroi >= 8001 && xpDoHeroi <= 9000) {
+    classificacaoDoHeroi = "Ascendente";
+}else if (xpDoHeroi >= 9001 && xpDoHeroi <= 10000) {
+    classificacaoDoHeroi = "Imortal";
+}else if (xpDoHeroi >= 10001) {
+    classificacaoDoHeroi = "Radiante";
 }else {
-    console.log("XP inválido!");
+    console.log("XP muito baixo!");
 }
+
+console.log(`O Herói de nome ${nomeDoHeroi} está com ${xpDoHeroi} de XP e está no nível ${classificacaoDoHeroi}!`);
